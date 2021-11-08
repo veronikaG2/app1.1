@@ -13,7 +13,7 @@ namespace Anketa
             string Fam = null;
             string Name = null;
             string SecondName = null;
-            string email = null;
+            
             string genders = null;
             string login = null;
             string passport = null;
@@ -34,9 +34,9 @@ namespace Anketa
 
             SecondName = Console.ReadLine();
             Console.ResetColor();
-            Console.Write("Введите ваш E - mail -");
+           
             Console.ForegroundColor = ConsoleColor.Red;
-            email = Console.ReadLine();
+            
             Console.ResetColor();
             Console.Write("Выберите ваш пол - ");
             Console.WriteLine("Если вы женщина введите 1 если вы мужчина введите 2.");
@@ -76,7 +76,7 @@ namespace Anketa
 
             {
                 case "A":
-                    Console.WriteLine($"фамилия - {Fam}, Имя - {Name}, Отчество - {SecondName}, Ваш Email - {email}, Ваш пол - {genders}, Ваш логин - {login}. ");
+                    Console.WriteLine($"фамилия - {Fam}, Имя - {Name}, Отчество - {SecondName}, Ваш пол - {genders}, Ваш логин - {login}. ");
                    break;
 
                 case "B":
